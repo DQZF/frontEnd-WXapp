@@ -1,0 +1,68 @@
+/**index.wxss**/
+.userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.userinfo-avatar {
+  width: 128rpx;
+  height: 128rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+
+.userinfo-nickname {
+  color: #aaa;
+}
+
+.usermotto {
+  margin-top: 200px;
+}
+.hide{
+  display: none;
+}
+.show{
+  display: block;
+}
+.mask{
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+}
+.mask-shadow{
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  opacity: 0;
+  transition: 1s;
+}
+.mask-shadow-on{
+  opacity: 0.3;
+}
+.mask-con{
+  position: absolute;
+  width: 100%;
+  height: 300rpx;
+  left: 0;
+  bottom: -300rpx;
+  background-color: white;
+  transition: 1s;
+  text-align: center;
+  line-height: 300rpx;
+  box-shadow: 0 1px 10px #aaa;
+}
+.mask-con-show{
+  bottom: 0;
+}
+.close{
+  position: absolute;
+  width: 30rpx;
+  height: 30rpx;
+  text-align: center;
+  line-height: 30rpx;
+  right: 10rpx;
+  top: 10rpx;
+}
