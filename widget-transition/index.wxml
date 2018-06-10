@@ -1,0 +1,11 @@
+<!--index.wxml-->
+<view class="container">
+  <button bindtap="chanMask">点我</button>
+  <view class="mask {{show ? 'show' : 'hide'}}" bindtap="chanMask">
+    <view class="mask-shadow {{runAM ? 'mask-shadow-on' : ''}}"></view>
+    <view class="mask-con {{runAM ? 'mask-con-show' : ''}}">
+      <view class="close" bindtap="chanMask">X</view>
+      慢慢飞起
+    </view>
+  </view>
+</view>
